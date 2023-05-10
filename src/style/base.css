@@ -1,0 +1,275 @@
+* {
+  margin:auto;
+  box-sizing:border-box;
+}
+
+.App{
+  width:100%;
+
+}
+header{
+  position:fixed;
+  width:100%;
+  background-color: rgb(255, 255, 255);
+  z-index:1;
+}
+
+header, .header-space{
+  width:100%;
+  height:6em;
+}
+
+header, .info-card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wrapper, .banner-wrapper{
+  width:90%;
+  font-size: 20px;
+  padding:0px;
+  display:flex;
+  justify-content:space-between;
+  height:inherit;
+}
+
+.banner-wrapper{
+  padding-top:1em;
+  padding-bottom:1em;
+  flex-direction: column;
+}
+
+.main-nav{
+  height:inherit;
+}
+
+.title, .main-nav ul{
+  width:100%;
+  height:inherit;
+  display:flex;
+}
+
+.main-nav ul{
+  display:flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.title h1{
+  width:100%;
+}
+
+
+.main-nav li{
+ display: inline-block;
+  width:8em;
+  
+  box-sizing: border-box;
+  line-height: 90px;
+  font-size:26px;
+  text-align:center;
+  background-color: white;
+  border-radius:10%;
+}
+
+.main-nav li:hover{
+  background-color: rgb(245, 243, 239);
+  cursor:pointer;
+}
+
+.main-nav{
+  justify-content:space-between;
+}
+
+.banner{
+  width:100%; 
+  color:white;
+  position:relative;
+}
+
+.banner:before{
+  content: "";
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-image: url("https://www.tastingtable.com/img/gallery/heres-what-your-local-grocery-store-likely-does-with-old-produce/l-intro-1655399787.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  top: 0px;
+  left: 0px;
+  z-index:-2;
+  filter:contrast(50%) sepia(0%) saturate(190%) brightness(60%);
+}
+
+.bannertext-limiter{
+  line-height: 3em;
+  height:100%;
+  margin-top:1em;
+  margin-bottom:1.1em;
+  display:flex;
+  flex-direction:column;
+}
+
+.helping-workers{
+  padding-bottom:0px;
+  font-size:1.083em;
+  margin-top:0em;
+  margin-bottom:0em;
+  line-height:2.4em; 
+  color: rgb(87, 233, 39);
+}
+
+.banner-title{
+  font-size:1.41em;
+  margin-top:0em;
+  margin-bottom:0em;
+  line-height:1em;
+}
+
+
+.fifty-years-text{
+  font-size:6em;
+  line-height:.6em; 
+  color: rgb(87, 233, 39);
+}
+
+/* Button Styles */
+
+button{
+  margin:1em;
+  padding:1em 2em;
+  font-size: 1em;
+  border-radius:9%;
+  height:3em;
+  width:8em;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.primary{
+  background-color: rgb(87, 233, 39);
+  color:white;
+  font-weight:bold;
+
+}
+
+.secondary{
+  background-color: transparent;
+  font-weight:bold;
+  color: rgb(87, 233, 39);
+  border:5px solid rgb(97, 233, 39);
+}
+
+/* rgb(131, 233, 97) is button 2nd color */
+
+.primary:hover{
+  background-color: rgb(201, 255, 183);
+}
+
+.secondary:hover{
+  border:5px solid rgb(201, 255, 183);
+  color: rgb(201, 255, 183);
+}
+
+.gallery{
+  background-color: rgb(217, 176, 78);
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+.info-card{
+  width:22em;
+  height:30em;
+  background-color: rgb(255, 255, 255);
+  padding:0px;
+  margin:0px;
+}
+
+.imagewrap{
+  width:100%;
+  height:17em;
+  position:relative;
+
+}
+
+.imagewrap img{
+  object-fit:cover;
+  height:100%;
+}
+
+.infocard-label{
+  padding:.5em;
+  text-align:center;
+
+}
+
+.infocard-desc{
+  padding:0em 1.5em;
+  line-height:2em;
+  text-align:center;
+}
+
+
+
+footer{
+  background-color:rgb(32, 29, 29);
+  width:100%;
+  height:13em;
+}
+
+.footer-left, .footer-middle, .footer-right{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width:100%;
+  height: inherit;
+}
+
+
+
+.footer-left p, .footer-middle p, .footer-right p{
+  height:2em;
+  width:inherit;
+  color:white;
+  display:flex;
+  align-items:center;
+}
+
+.psuedo-header{
+  font-weight:bold;
+}
+
+.footer-middle p{
+  justify-content:center;
+}
+
+.footer-right p{
+  justify-content:flex-end;
+}
+
+svg{
+  background-color: rgb(87, 233, 39);
+  border-radius:50%;
+  padding:.9em;
+  margin: 0em 0.3em 0.3em 0em;
+  width:3em;
+  height:3em;
+  font-size:1em;
+  color:rgb(255, 255, 255);
+}
+
+svg:hover{
+  background-color: rgb(152, 248, 120);
+  cursor:pointer;
+}
+
+
+
+
+.social-media{
+  height:4em;
+  width:inherit;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+}
+
