@@ -3,7 +3,7 @@ import React from 'react'
 function Gallery(props) {
   return (
     <div className="gallery">
-        <div className="wrapper">
+        <div className="gallery-wrapper">
           {props.content.map((index) => 
           <div className="info-card">
             <div className="imagewrap">

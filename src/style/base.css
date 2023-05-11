@@ -23,14 +23,23 @@ header, .info-card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.wrapper, .banner-wrapper{
-  width:90%;
+.wrapper, .banner-wrapper, .gallery-wrapper{
   font-size: 20px;
   padding:0px;
   display:flex;
   justify-content:space-between;
   height:inherit;
+  /* border: 1px solid red; */
 }
+
+.wrapper, .banner-wrapper{
+  width:90%;
+}
+
+.gallery-wrapper{
+  width:90%;
+}
+
 
 .banner-wrapper{
   padding-top:1em;
@@ -98,7 +107,7 @@ header, .info-card{
   top: 0px;
   left: 0px;
   z-index:-2;
-  filter:contrast(50%) sepia(0%) saturate(190%) brightness(60%);
+  filter:contrast(50%) sepia(0%) saturate(110%) brightness(60%);
 }
 
 .bannertext-limiter{
@@ -116,7 +125,7 @@ header, .info-card{
   margin-top:0em;
   margin-bottom:0em;
   line-height:2.4em; 
-  color: rgb(87, 233, 39);
+  color: rgb(119, 204, 91);
 }
 
 .banner-title{
@@ -130,7 +139,7 @@ header, .info-card{
 .fifty-years-text{
   font-size:6em;
   line-height:.6em; 
-  color: rgb(87, 233, 39);
+  color: rgb(119, 204, 91);
 }
 
 /* Button Styles */
@@ -147,7 +156,7 @@ button{
 }
 
 .primary{
-  background-color: rgb(87, 233, 39);
+  background-color: rgb(119, 204, 91);
   color:white;
   font-weight:bold;
 
@@ -156,30 +165,30 @@ button{
 .secondary{
   background-color: transparent;
   font-weight:bold;
-  color: rgb(87, 233, 39);
-  border:5px solid rgb(97, 233, 39);
+  color: rgb(174, 255, 147);
+  border:5px solid rgb(119, 204, 91);
 }
 
 /* rgb(131, 233, 97) is button 2nd color */
 
 .primary:hover{
-  background-color: rgb(201, 255, 183);
+  background-color: rgb(83, 158, 58);
 }
 
 .secondary:hover{
-  border:5px solid rgb(201, 255, 183);
-  color: rgb(201, 255, 183);
+  border:5px solid rgb(83, 158, 58);
+  color: rgb(83, 158, 58);
 }
 
 .gallery{
-  background-color: rgb(217, 176, 78);
+  background-color: rgb(221, 199, 146);
   padding-top:1em;
   padding-bottom:1em;
 }
 
 .info-card{
-  width:22em;
-  height:30em;
+  width:14em;
+  height:25em;
   background-color: rgb(255, 255, 255);
   padding:0px;
   margin:0px;
@@ -187,7 +196,7 @@ button{
 
 .imagewrap{
   width:100%;
-  height:17em;
+  height:13em;
   position:relative;
 
 }
@@ -212,7 +221,7 @@ button{
 
 
 footer{
-  background-color:rgb(32, 29, 29);
+  background-color:rgb(71, 71, 71);
   width:100%;
   height:13em;
 }
@@ -247,7 +256,7 @@ footer{
 }
 
 svg{
-  background-color: rgb(87, 233, 39);
+  background-color: rgb(119, 204, 91);
   border-radius:50%;
   padding:.9em;
   margin: 0em 0.3em 0.3em 0em;
@@ -258,7 +267,7 @@ svg{
 }
 
 svg:hover{
-  background-color: rgb(152, 248, 120);
+  background-color: rgb(83, 158, 58);
   cursor:pointer;
 }
 
